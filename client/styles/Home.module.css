@@ -1,0 +1,148 @@
+.main{
+    width: 100%;
+    background-image: url('../public/blockbg.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.conndiv{
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    padding: 14px;
+    flex-direction: column;
+}
+
+.connectbtn{
+    background-color: blue;
+    color: white;
+    cursor: pointer;
+    padding: 8px 14px;
+    border-radius: 14px;
+    font-weight: bold;
+    border: none;
+    font-size: 18px;
+}
+
+.connectaddress{
+    font-size: 19px;
+    color: white;
+}
+
+.qnum{
+    font-size: 17px;
+    color: white;
+}
+
+
+.outer{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.inner{
+    width: 60%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.inner input{
+    width: 70%;
+    padding: 14px 12px;
+    border-radius: 13px;
+    border: none;
+    font-size: 17px;
+}
+
+.inner button{
+    width: 20%;
+    background-color: green;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+
+
+
+
+
+.upper{
+    display: flex;
+    margin-bottom: 2vh;
+}
+
+.outside{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+    margin-bottom: 4vh;
+   
+}
+
+.percentage{
+    width: 70%;
+    height: 2vh;
+    border: 1px solid blue;
+    border-radius: 5px;
+
+}
+
+.radio{
+    height: 20px;
+    width: 20px;
+    cursor: pointer;
+    accent-color: blue;
+}
+
+.vote{
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    background-color: blue;
+    color: white;
+    font-weight: 700;
+    width: 20%;
+    font-size: 16px;
+}
+
+.clear{
+    margin-left: 10%;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    background-color: blue;
+    color: white;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.card{
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 10px;
+    width: 80%;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+   
+}
+
+.cardcomponent{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 50% 50% ;
+
+    place-items: center;
+    margin-top: 10vh;
+    row-gap: 5vh;
+    padding: 10px;
+}

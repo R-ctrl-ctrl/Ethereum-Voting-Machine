@@ -4,6 +4,9 @@ pragma solidity >= 0.5.0 < 0.9.0;
 
 contract Voting{
         uint public qnum;
+        mapping(uint=>uint) public mapyes;
+        mapping(uint=>uint) public mapno;
+        mapping(uint=>uint) public mapignore;
         struct Questions{
             string question;
             address asker;
@@ -38,7 +41,22 @@ contract Voting{
             option = _option;
             Votes memory v = Votes(msg.sender,option,_questionNumber);
             votes.push(v);
+            if(_option == Options.Yes){
+                    mapyes[_questionNumber]++;
+            }
+            else if(_option == Options.No){
+                mapno[_questionNumber]++;
+            }
+            else{
+                mapignore[_questionNumber]++;
+            }   
        }
+
+
+       function noOfVotes(uint _questionNumber) public view returns(uint,uint,uint){
+           return (mapyes[_questionNumber],mapno[_questionNumber],mapignore[_questionNumber]);
+
+       } 
 
 
 
